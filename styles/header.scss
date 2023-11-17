@@ -1,0 +1,54 @@
+@import "./global.scss";
+
+.hangerContainer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 17px;
+
+    a{
+        color: $grayColor;
+        display: flex;
+        align-items: center;
+        
+
+        p{
+            font-size: 10px;
+            position: absolute; 
+            width: fit-content;
+            visibility: hidden;
+            background: transparent;
+            opacity: 0;
+            left: 3rem;
+            transition: all .3s ease-in-out;
+            z-index: 99999;
+        }
+    }
+
+    .line{
+        width: 1px;
+        height: 191px;
+        background: $grayColor;
+    }
+
+    svg{
+        color: $grayColor;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+
+        &:hover +p{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    
+
+}

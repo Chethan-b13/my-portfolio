@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
+
+$bg-color: #282C33;
+$primary-color: #C778DD;
+$text-color: #ffffff;
+$grayColor: #ABB2BF;
+$leftGap: 176px;
+
 *{
-    background: #282C33;
+    background: $bg-color;
     font-family: 'Fira Code', monospace;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+a{
+  text-decoration: none;
 }
