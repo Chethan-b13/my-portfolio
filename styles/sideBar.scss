@@ -1,0 +1,124 @@
+@import "../styles/global.scss";
+
+.sideBarcontainer{
+    position: sticky;
+    top: 0;
+    background: $bg-color2;
+    max-width: 21em;
+    height: 100vh;
+    padding: 0 2.5em;
+
+    .sideBarHeader{
+        width: 100%;
+        padding: 1.5em;
+        position: relative;
+
+        .mainImage{
+            width: 140px;
+            height: 140px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                transform: scale(1.2);
+            }
+        }
+
+        p{
+            color: $dark-gray;
+        }
+    }
+
+    .sidenav_list{
+        .nav_items{
+            padding: 1.5em 1.5em;
+
+
+            a{
+                color: $text-color;
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                font-size: 20px;
+                color: $dark-gray;
+                transition: all .3s ease-in-out;
+
+                &.active{
+                    color: $text-color;
+                }
+
+                svg{
+                    color: $-text-color--grey-placeholder;
+                }
+
+                &:hover{
+                    color: $text-color;
+
+                    svg{
+                        color: $dark-gray;
+                        animation: rotate3d .5s ease-in-out alternate-reverse;
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+    .footerLinks{
+        position: fixed;
+        bottom: 1em;
+        margin-left: 1.5em;
+
+        .resumeDownloadButton{
+            color: $-text-color--grey-placeholder;
+            font-size: 15px;
+            padding: .475rem .725rem;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                color: $dark-gray;
+
+                svg{
+                    color: $dark-gray;
+                }
+            }
+        }
+
+        a{
+            font-size: 20px;
+
+            svg{
+                color:  $-text-color--grey-placeholder;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+
+                &:hover{
+                    color : $dark-gray;
+                    scale: 1.1;
+                }
+            }
+
+            
+
+            &:last-child{
+                font-size: 25px;
+            }
+        }
+        
+        
+    }
+}
+
+
+// #### Animations ##################
+
+@keyframes rotate3d {
+    0%{
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100%{
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}

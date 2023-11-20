@@ -1,10 +1,10 @@
+import SideSection from '@/components/SideSection'
 import React from 'react'
-import HeaderSection from "../components/HeaderSection"
 
 const Home = () => {
   return (
     <div>
-      <HeaderSection />
+      <SideSection />
     </div>
   )
 }

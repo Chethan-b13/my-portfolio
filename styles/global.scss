@@ -1,20 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-$bg-color: #282C33;
-$primary-color: #C778DD;
-$text-color: #ffffff;
-$grayColor: #ABB2BF;
-$leftGap: 176px;
+$bg-color: #161616;
+$bg-color2: #111;
+$dark-gray: #9ba1a7;
+// $primary-color: #C778DD;
+$text-color: #fff;
+$-text-color--grey-placeholder: #666;
+// $grayColor: #ABB2BF;
+// $leftGap: 176px;
 
 *{
-    background: $bg-color;
-    font-family: 'Fira Code', monospace;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body{
+  color: #fff;
+  background-color: $bg-color;
+  font-family: "Arial",'Roboto', sans-serif !important;
+  line-height: 1.5;
+}
+
 a{
   text-decoration: none;
+}
+
+button{
+  border: .0625rem solid rgba(255,255,255,.1);
+  background: transparent;
+  border-radius: .375rem;
+  cursor: pointer;
+}
+
+.smallFlexBox{
+  display: flex;
+  align-items: center;
+  gap: .5em;
 }
