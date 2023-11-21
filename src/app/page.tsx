@@ -1,6 +1,7 @@
 import SideSection from '@/components/SideSection'
 import React from 'react'
 import Head from 'next/head';
+import HomePageInfo from '@/components/HomePageInfo';
 
 const Home = () => {
   return (
@@ -15,7 +16,15 @@ const Home = () => {
         <meta property="og:image:height" content="250" />
         {/* Other Open Graph tags */}
       </Head>
-      <SideSection />
+
+
+      <div className="pageLayout">
+        <SideSection />
+        <HomePageInfo />
+      </div>
+      {/* Engineering Tomorrow: One Line of Code at a Time. */}
+      {/* Building Tomorrow: Tech Tales by [Your Name] */}
+
     </div>
   )
 }
