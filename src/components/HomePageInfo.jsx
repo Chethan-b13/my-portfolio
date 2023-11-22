@@ -8,7 +8,7 @@ const HomePageInfo = () => {
     <div className='mainInfo_container'>
         <div className="padding_section">
           <h1 id='headline'>Hello World! <br />
-          I'm a {" "}
+          I&#39;m a {" "}
           <Typewriter
             words={['Team Lead', 'Data Scientist', "Full Stack Developer"]}
             loop={5}
