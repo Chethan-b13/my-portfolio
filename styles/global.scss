@@ -4,7 +4,10 @@
 $bg-color: #161616;
 $bg-color2: #111;
 $dark-gray: #9ba1a7;
-// $primary-color: #C778DD;
+// $primary-color: #F2DC5D;
+// $primary-bg-color: #A4031F;
+$primary-color: #A1EF8B;
+$primary-bg-color: #772D8B;
 $text-color: #fff;
 $-text-color--grey-placeholder: #666;
 // $grayColor: #ABB2BF;
@@ -21,6 +24,7 @@ body{
   background-color: $bg-color;
   font-family: "Arial",'Roboto', sans-serif !important;
   line-height: 1.5;
+  // font-size: calc(1.0057471264367814vw + 0.12643678160919555em);
 }
 
 a{
@@ -45,3 +49,13 @@ button{
   position: relative;
 }
 
+.blur_background{
+  width: 15rem;
+  height: 15rem;
+  filter: blur(6.25rem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: $primary-bg-color;
+  transform: translate(-50px, 50px);
+}

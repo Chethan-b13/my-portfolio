@@ -22,9 +22,25 @@
         }
 
         .mainGridSection{
-            margin-top: 5em;
+            width: 100%;
+            margin-top: 2em;
             position: relative;
             width: 100%;
+            display: grid;
+            gap: 1rem 1rem;
+            grid-template-columns: 1fr 1fr;
+
+            .gridCardFour{
+                position: relative;
+                
+                display: grid;
+                gap: 1rem 1rem;
+                align-items: center;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+
+        
         }
     }   
 
