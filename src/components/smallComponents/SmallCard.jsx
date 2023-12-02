@@ -1,9 +1,12 @@
 import React from 'react'
 import "../../../styles/cards.scss"
 
-const SmallCard = ({children,alignItem}) => {
+const SmallCard = ({children,styles}) => {
     const customStyle = {
-        alignItems: alignItem || "center"
+        alignItems: styles?.alignItem || "center",
+        width: styles?.width || "100%",
+        minHeight: styles?.minHeight || "100%",
+        padding: styles?.padding || "2rem",
     }
     return (
         <div className='smallCardContainer' style={customStyle}>

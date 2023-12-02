@@ -1,12 +1,9 @@
 @import "./global.scss";
 
 .smallCardContainer{
-    min-height: 11.5rem;
-    width: 100%;
     background-color: $bg-color2;
     border: 0.0625rem solid rgba(255,255,255,.1);
     border-radius: 0.625em;
-    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;

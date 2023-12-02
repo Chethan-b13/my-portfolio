@@ -59,3 +59,21 @@ button{
   background-color: $primary-bg-color;
   transform: translate(-50px, 50px);
 }
+
+.flexBox{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex_gap_1{
+  gap: 1rem;
+}
+
+.flex_gap_half{
+  gap: 0.5rem;
+}
+
+.flexWrap{
+  flex-wrap: wrap;
+}
