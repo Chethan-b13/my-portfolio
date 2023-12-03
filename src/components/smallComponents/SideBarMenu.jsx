@@ -20,7 +20,7 @@ const SideBarMenu = () => {
         {
             "name":"Skills",
             "icon": <BiCodeBlock />,
-            "linkTo":"#"
+            "linkTo":"#skillsSection"
         },
         {
             "name":"About",
@@ -35,7 +35,8 @@ const SideBarMenu = () => {
         {
             "name":"Contact",
             "icon": <FaPhoneAlt />,
-            "linkTo":"#"
+            "linkTo":"https://www.linkedin.com/in/chethan-b-31b58a192/",
+            "target":"_blank"
         },
     ]
 
@@ -45,7 +46,7 @@ const SideBarMenu = () => {
                 menuOptions.map((items,i)=>{
                     return (
                         <div className='nav_items' key={i}>
-                        <a href={items.linkTo} >
+                        <a href={items.linkTo} target={items?.target || "_self"} >
                         {items.icon}
                         {items.name}
                         </a>
