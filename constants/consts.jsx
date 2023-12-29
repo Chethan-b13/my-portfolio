@@ -1,7 +1,8 @@
-import { BiLogoDjango, BiLogoFlask } from 'react-icons/bi';
-import { FaDatabase, FaDocker, FaGlobe, FaHtml5, FaPython, FaReact, FaWordpress } from 'react-icons/fa';
-import { GoGraph } from 'react-icons/go';
-import { MdCoffee, MdComputer, MdDataObject, MdWebhook } from 'react-icons/md';
+import { BiLogoDjango, BiLogoFlask, BiSolidIdCard, BiCodeBlock } from 'react-icons/bi';
+import { FaDatabase, FaDocker, FaGlobe, FaHtml5, FaPython, FaReact, FaWordpress,FaLaptopCode,FaPhoneAlt } from 'react-icons/fa';
+import { GoGraph,GoGitBranch } from 'react-icons/go';
+import { MdCoffee, MdComputer, MdDataObject } from 'react-icons/md';
+import { AiOutlineSafetyCertificate } from "react-icons/ai";
 
 
 export const skills = [
@@ -58,3 +59,37 @@ export const skills = [
       icon : <MdCoffee />
     },
   ]
+
+  export const menuOptions = [
+    {
+        "name":"Home",
+        "icon": <FaLaptopCode />,
+        "linkTo":"#"
+    },
+    {
+        "name":"Projects",
+        "icon": <GoGitBranch />,
+        "linkTo":"#"
+    },
+    {
+        "name":"Skills",
+        "icon": <BiCodeBlock />,
+        "linkTo":"#skillsSection"
+    },
+    {
+        "name":"About",
+        "icon": <BiSolidIdCard />,
+        "linkTo":"#"
+    },
+    {
+        "name":"Certificates",
+        "icon": <AiOutlineSafetyCertificate />,
+        "linkTo":"#"
+    },
+    {
+        "name":"Contact",
+        "icon": <FaPhoneAlt />,
+        "linkTo":"https://www.linkedin.com/in/chethan-b-31b58a192/",
+        "target":"_blank"
+    },
+]
