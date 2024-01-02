@@ -23,6 +23,10 @@ export const skills = [
       icon : <FaReact />
     },
     {
+      name:"Flask",
+      icon : <BiLogoFlask />
+    },
+    {
       name:"Machine Learning | Deep Learning | NLP",
       icon : <GoGraph />
     },
@@ -45,10 +49,6 @@ export const skills = [
     {
       name:"System Design",
       icon : <MdComputer />
-    },
-    {
-      name:"Flask",
-      icon : <BiLogoFlask />
     },
     {
       name:"WordPress",

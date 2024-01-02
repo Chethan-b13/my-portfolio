@@ -4,6 +4,7 @@ import "@/styles/homepage.scss";
 import { Typewriter } from 'react-simple-typewriter';
 import SkillCard from './SkillCard';
 import IntroSection from './IntroSection';
+import FeaturedProjects from './FeaturedProjects';
 
 const HomePageInfo = () => {
 
@@ -23,7 +24,10 @@ const HomePageInfo = () => {
           />
           </h1>
           <IntroSection />
-          <SkillCard />
+          <div className="mainGridSection" id="skillsSection">
+            <SkillCard />
+            <FeaturedProjects />
+          </div>
         </div>
     </div>
   )

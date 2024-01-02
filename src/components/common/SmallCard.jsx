@@ -7,6 +7,7 @@ const SmallCard = ({children,styles}) => {
         width: styles?.width || "100%",
         minHeight: styles?.minHeight || "100%",
         padding: styles?.padding || "2rem",
+        justifyContent: styles?.justifyContent || "center"
     }
     return (
         <div className='smallCardContainer' style={customStyle}>
