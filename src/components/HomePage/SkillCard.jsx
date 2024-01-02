@@ -1,6 +1,6 @@
 import React from 'react'
 import { skills } from '../../../constants/consts'
-import SmallCard from './SmallCard'
+import SmallCard from '../common/SmallCard'
 
 const SkillCard = () => {
   return (

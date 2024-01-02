@@ -1,7 +1,7 @@
-import SideSection from '@/components/SideSection'
+import SideSection from '@/components/SideNavBar/SideSection'
 import React from 'react'
 import Head from 'next/head';
-import HomePageInfo from '@/components/HomePageInfo';
+import HomePageInfo from '@/components/HomePage/HomePageInfo';
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import "../../styles/sideBar.scss"
-import MainNameCard from './smallComponents/MainNameCard';
-import SideBarMenu from './smallComponents/SideBarMenu';
+import "@/styles/sideBar.scss"
+import MainNameCard from './MainNameCard';
+import SideBarMenu from './SideBarMenu';
 import { FaLinkedin,FaGithub } from "react-icons/fa6";
 import { MdDownloading , MdMail} from "react-icons/md";
 

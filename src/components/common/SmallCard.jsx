@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../styles/cards.scss"
+import "@/styles/cards.scss"
 
 const SmallCard = ({children,styles}) => {
     const customStyle = {

@@ -1,13 +1,11 @@
 "use client";
 import React from 'react'
-import "../../styles/homepage.scss";
+import "@/styles/homepage.scss";
 import { Typewriter } from 'react-simple-typewriter';
-import SmallCard from './smallComponents/SmallCard';
-import SkillCard from './smallComponents/SkillCard';
-import IntroSection from './smallComponents/IntroSection';
+import SkillCard from './SkillCard';
+import IntroSection from './IntroSection';
 
 const HomePageInfo = () => {
-
 
   return (
     <div className='mainInfo_container'>
