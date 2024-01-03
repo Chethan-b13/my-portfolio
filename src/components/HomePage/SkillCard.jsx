@@ -4,7 +4,7 @@ import SmallCard from '../common/SmallCard'
 
 const SkillCard = () => {
   return (
-    <SmallCard styles={{alignItem:"flex-start"}}>
+    <SmallCard styles={{alignItem:"flex-start",justifyContent:"flex-start"}}>
         <h2>Skills</h2>
         <div className="flexBox flex_gap_1 flexWrap">
             {
