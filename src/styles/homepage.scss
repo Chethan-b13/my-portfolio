@@ -68,14 +68,11 @@
 
             .projectDetails{
                 padding: 10px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
 
-                p{
-                    color: $text-color;
-                }
-
-                h6{
-                    color: $dark-gray;
-                }
             }
         }
 
