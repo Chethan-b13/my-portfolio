@@ -23,7 +23,7 @@ const IntroSection = () => {
             <p>Personal Projects</p>
             </SmallCard>
             <SmallCard>
-            <h1>6<span style={{fontSize:"1rem"}}>Months</span></h1>
+            <h1>8<span style={{fontSize:"1rem"}}>Months</span></h1>
             <p>Industry Experience</p>
             </SmallCard>
             <SmallCard>
