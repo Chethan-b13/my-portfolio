@@ -5,6 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import SkillCard from './SkillCard';
 import IntroSection from './IntroSection';
 import FeaturedProjects from './FeaturedProjects';
+import Certificates from './Certificates';
 
 const HomePageInfo = () => {
 
@@ -27,6 +28,7 @@ const HomePageInfo = () => {
           <div className="mainGridSection" id="skillsSection">
             <SkillCard />
             <FeaturedProjects />
+            <Certificates />
           </div>
         </div>
     </div>
