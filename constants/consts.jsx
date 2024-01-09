@@ -5,7 +5,7 @@ import { MdCoffee, MdComputer, MdDataObject } from 'react-icons/md';
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 
 
-const environment = "development"
+const environment = "prod"
 export const BASEURL = environment==="development"?"/":"https://chethan-b13.github.io/my-portfolio/"
 
 
