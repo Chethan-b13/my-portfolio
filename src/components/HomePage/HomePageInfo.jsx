@@ -6,6 +6,7 @@ import SkillCard from './SkillCard';
 import IntroSection from './IntroSection';
 import FeaturedProjects from './FeaturedProjects';
 import Certificates from './Certificates';
+import Experience from './Experience';
 
 const HomePageInfo = () => {
 
@@ -28,7 +29,11 @@ const HomePageInfo = () => {
           <div className="mainGridSection" id="skillsSection">
             <SkillCard />
             <FeaturedProjects />
-            <Certificates />
+            <Experience />
+            <div className='certAndContact'>
+              <Certificates />
+              {/* <Certificates /> */}
+            </div>
           </div>
         </div>
     </div>

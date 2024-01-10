@@ -39,7 +39,11 @@
                 grid-template-rows: 1fr 1fr;
             }
 
-            
+            .certAndContact{
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                gap: 1rem 1rem;
+            }
         }
 
     }  
@@ -85,18 +89,59 @@
 
 }
 
+
+// ############ Certificates ############################
 .certificateName{
 
     h4{
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 500;
     }
 
-    p{
+    p,a{
         font-size: 0.9rem !important;
     }
-    a{
-        font-size: 1rem !important;
+}
+
+
+
+
+// ################### experience ##############################
+
+.companyInfo{
+    display: flex;
+    gap: 1rem;
+
+    .companyLogo{
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    h4,h3{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    a,p{
+        width: fit-content;
+        font-size: 0.9rem !important;
+    }
+
+    h3{
+        margin-top: 0.5rem;
+        color: $primary-color;
+    }
+
+    hr{
+        border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 1rem;
     }
 }
 
