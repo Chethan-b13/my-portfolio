@@ -7,6 +7,7 @@ import IntroSection from './IntroSection';
 import FeaturedProjects from './FeaturedProjects';
 import Certificates from './Certificates';
 import Experience from './Experience';
+import ContactCard from './ContactCard';
 
 const HomePageInfo = () => {
 
@@ -32,7 +33,7 @@ const HomePageInfo = () => {
             <Experience />
             <div className='certAndContact'>
               <Certificates />
-              {/* <Certificates /> */}
+              <ContactCard />
             </div>
           </div>
         </div>

@@ -3,10 +3,12 @@ import { FaDatabase, FaDocker, FaGlobe, FaHtml5, FaPython, FaReact, FaWordpress,
 import { GoGraph,GoGitBranch } from 'react-icons/go';
 import { MdCoffee, MdComputer, MdDataObject } from 'react-icons/md';
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
+import { FaLinkedin,FaGithub } from "react-icons/fa6";
+import { MdMail} from "react-icons/md";
 
 
-const environment = "prod"
-export const BASEURL = environment==="development"?"/":"https://chethan-b13.github.io/my-portfolio/"
+const environment = "dev"
+export const BASEURL = environment==="dev"?"/":"https://chethan-b13.github.io/my-portfolio/"
 
 
 export const skills = [
@@ -81,9 +83,9 @@ export const skills = [
         "linkTo":`${BASEURL}#skillsSection`
     },
     {
-        "name":"About",
+        "name":"Experience",
         "icon": <BiSolidIdCard />,
-        "linkTo":`${BASEURL}#`
+        "linkTo":`${BASEURL}#experience`
     },
     {
         "name":"Certificates",
@@ -96,6 +98,29 @@ export const skills = [
         "linkTo":"https://www.linkedin.com/in/chethan-b-31b58a192/",
         "target":"_blank"
     },
+]
+
+export const ContactDetails = [
+  {
+      contactIcon : <FaPhoneAlt />,
+      link : "tel:+917022381576",
+      name : "+91 7022381576"
+  },
+  {
+      contactIcon : <MdMail />,
+      link : "mailto:chethanb1321@gmail.com",
+      name : "chethanb1321@gmail.com"
+  },
+  {
+      contactIcon : <FaLinkedin />,
+      link : "https://www.linkedin.com/in/chethan-b-31b58a192/",
+      name : "https://www.linkedin.com/in/chethan-b-31b58a192/"
+  },
+  {
+      contactIcon : <FaGithub />,
+      link : "https://github.com/chethan-b13/",
+      name : "https://github.com/chethan-b13/"
+  },
 ]
 
 
@@ -194,4 +219,39 @@ export const certificatesInfo = [
     date: "Apr 2022",
     creds: "https://www.credly.com/badges/a79faf88-26e2-4674-9b6a-0b096ba50679"
   }
+]
+
+
+export const workExperience = [
+  {
+    companyName:"Vedasis Analytics Pvt Ltd.",
+    companyLogo : "./vhubLogo.png",
+    duration:"May 2023 - Present",
+    role:"FullStack Developer & Tech Lead",
+    summary:[
+      "Optimized Flask backend structure, boosting scalability and readability, Integrated Swagger documentation and boosted productivity by 70%",
+      "Implemented code refactoring techniques within NextJs app, eliminating reliance on external UI libraries and reduced bug fixing time by 25%",
+      "Conducted code reviews for stable, bug-free deployments which reduced post-deployment issues by 50% and improved overall product quality",
+      "Engineered scraping tools for Instagram and YouTube, enabling collection of over 8000 data points per day",
+      "Enhanced back end performance by 60% through Redis integration, multi-threading, and optimized query efficiency",
+      "Mentored the team in writing efficient, reusable code, emphasizing industry best practices resulting in 30% reduction in redundant lines",
+      "Revamped WordPress landing page, slashing reload time from 8 to 2 seconds and boosting SEO score by 89%",
+      "Interacted directly with 10+ clients to gather requirements, planning feature implementations aligned with stakeholder needs"
+    ]
+  },
+]
+
+export const internshipExp = [
+  {
+    companyName:"Betsol",
+    companyLogo : "./betsolLogo.png",
+    duration:"Feb 2023 - Mar 2023",
+    role:"Software Engineer Trainee",
+    summary:[
+      "Mastered DevOps tools, including Docker and Docker Compose, to optimize development and deployment workflows",
+      "Pioneered a proof-of-concept initiative, transitioning the product to a stateless architecture",
+      "Conducted research on the Restic backup tool, exploring its capabilities and potential applications",
+      "Collaborated with the team, recognizing individual roles and working collectively towards shared objectives",
+    ]
+  },
 ]

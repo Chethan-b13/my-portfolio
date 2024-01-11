@@ -36,7 +36,7 @@ const ProjectCards = () => {
                             {
                                 project?.details.map((point,idx)=>{
                                     return (
-                                        <div key={idx} className='flexBox flex_gap_1'>
+                                        <div key={idx} className='flexBox flex_gap_1 alignFlexStart'>
                                             •
                                             <p>{point}</p>
                                         </div>

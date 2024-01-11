@@ -4,7 +4,7 @@ import { certificatesInfo } from '../../../constants/consts'
 
 const Certificates = () => {
   return (
-    <SmallCard styles={{alignItem:"flex-start",justifyContent:"flex-start",minHeight:"auto"}}>
+    <SmallCard styles={{alignItem:"flex-start",justifyContent:"flex-start",height:"fit-content",minHeight:"auto"}}>
         <h2 id="certificates">Certificates</h2>
         {
           certificatesInfo.map((certificate,indx)=>{

@@ -25,7 +25,6 @@
             width: 100%;
             margin-top: 2em;
             position: relative;
-            width: 100%;
             display: grid;
             gap: 1rem 1rem;
             grid-template-columns: 1fr 1fr;
@@ -41,8 +40,15 @@
 
             .certAndContact{
                 display: grid;
-                grid-template-rows: 1fr 1fr;
+                grid-template-rows: 1fr 3fr;
                 gap: 1rem 1rem;
+
+                .contactDetails{
+                    a,svg{
+                        font-size: 1rem !important;
+                        color: $dark-gray;
+                    }
+                }
             }
         }
 
@@ -113,11 +119,11 @@
     gap: 1rem;
 
     .companyLogo{
-        height: 3rem;
-        width: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 5rem;
+        width: 5rem;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
 
         img{
             width: 100%;
@@ -135,7 +141,6 @@
     }
 
     h3{
-        margin-top: 0.5rem;
         color: $primary-color;
     }
 
@@ -143,6 +148,15 @@
         border: 0.0625rem solid rgba(255, 255, 255, 0.1);
         margin-bottom: 1rem;
     }
+}
+
+
+// ############# Experience Section #################
+
+.experienceSection{
+    height: 27.8rem;
+    overflow: hidden;
+    
 }
 
 // ############## Animations ##########################
