@@ -1,13 +1,32 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import "@/styles/sideBar.scss"
 import MainNameCard from './MainNameCard';
 import SideBarMenu from './SideBarMenu';
 import { FaLinkedin,FaGithub } from "react-icons/fa6";
-import { MdDownloading , MdMail} from "react-icons/md";
+import { MdArrowCircleLeft, MdClose, MdDownloading , MdMail, MdMenu} from "react-icons/md";
+import { useMediaQuery } from 'react-responsive';
 
 const SideSection = () => {
+  const isMobile = useMediaQuery({
+    query: '(max-width: 768px)'
+  });
+
+  const [openMenu, setopenMenu] = useState(false);
+
   return (
-    <div className='sideBarcontainer'>
+    <>
+    {
+    isMobile && 
+    <div className="humburger" style={{left:openMenu && "13.5rem"}} onClick={()=>{setopenMenu(open => !open)}}>
+      {
+        !openMenu ? <MdMenu /> : <MdArrowCircleLeft />
+      }
+      
+    </div>
+    }
+    <div className={`sideBarcontainer ${isMobile && "absoluteContainer"} ${!openMenu && isMobile && "hidden"}`}>
       <MainNameCard />
       <SideBarMenu />
       <div className="footerLinks smallFlexBox">
@@ -19,6 +38,7 @@ const SideSection = () => {
         <a href="mailto:chethanb1321@gmail.com" className='smallFlexBox'><MdMail /></a>
       </div>
     </div>
+    </>
   )
 }
 

@@ -61,3 +61,18 @@
         left: 100%;
     }
 }
+
+
+@media screen and (max-width:768px) {
+    .smallCardContainer{
+        padding: 1rem !important; 
+        
+        h1{
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 0.7rem;
+        }
+    }
+}

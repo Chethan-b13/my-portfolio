@@ -9,9 +9,9 @@ const Experience = () => {
         <div className='columnFlex'>
         <h2 id="experience">Experience</h2>
         {
-          workExperience.map((experience)=>{
+          workExperience.map((experience,indx)=>{
             return(
-              <>
+              <React.Fragment key={indx}>
                 <hr id='divider' />
                 <div className="companyInfo">
                     <div className="companyLogo">
@@ -34,7 +34,7 @@ const Experience = () => {
                   })
                 }      
                 
-              </>
+              </React.Fragment>
             )
           })
         }

@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "@/styles/homepage.scss";
 import { Typewriter } from 'react-simple-typewriter';
 import SkillCard from './SkillCard';
@@ -8,10 +8,13 @@ import FeaturedProjects from './FeaturedProjects';
 import Certificates from './Certificates';
 import Experience from './Experience';
 import ContactCard from './ContactCard';
+import SideSection from '../SideNavBar/SideSection';
 
 const HomePageInfo = () => {
 
   return (
+    <>
+    <SideSection />
     <div className='mainInfo_container'>
         <div className="padding_section">
           <h1 id='headline'>Hello World! <br />
@@ -38,6 +41,7 @@ const HomePageInfo = () => {
           </div>
         </div>
     </div>
+    </>
   )
 }
 

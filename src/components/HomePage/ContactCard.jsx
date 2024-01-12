@@ -10,12 +10,12 @@ const ContactCard = () => {
             {
                 ContactDetails.map((info,indx)=>{
                     return (
-                        <>
+                        <React.Fragment key={indx}>
                         <div className="flexBox flex_gap_1 contactDetails">
                             {info?.contactIcon}
                             <a href={info?.link} target='_blank' className='smallFlexBox'>{info?.name}</a>
                         </div>
-                        </>
+                        </React.Fragment>
                     )
                 })
             }

@@ -14,15 +14,15 @@ const FeaturedProjects = () => {
               {
                 featuredProjects.map((project,indx)=>{
                   return (
-                  <>
-                    <div key={indx} className="overlayBg">
+                  <React.Fragment key={indx}>
+                    <div className="overlayBg">
                       <div className="projectDetails">
                           <h2>{project?.projectName}</h2>
                           <h6>{project?.techUsed}</h6>
                       </div>
                     </div>
                     <img src={project?.projectImage} alt="" />
-                  </>
+                  </React.Fragment>
                   )
                 })
               }

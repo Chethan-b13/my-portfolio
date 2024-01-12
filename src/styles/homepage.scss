@@ -159,6 +159,21 @@
     
 }
 
+
+// #################################################
+
+.humburger{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    z-index: 999;
+    
+    svg{
+        font-size: 1.5rem;
+        color: $dark-gray;
+    }
+}
+
 // ############## Animations ##########################
 @keyframes screenDown {
     0%{
@@ -166,5 +181,34 @@
     }
     100%{
         transform: translateY(0);
+    }
+}
+
+
+
+// ############### Mobile Screen #############################
+
+@media screen and (max-width:768px) {
+    .mainInfo_container{
+
+        .padding_section{
+            padding: 4em 1.5em 1.5rem 1.5rem;
+
+            #headline{
+                font-size: 1.5rem;
+            }
+
+            .mainGridSection{
+                grid-template-columns:1fr;
+
+                .gridCardFour{
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .blur_background{
+        top: 5% !important;
     }
 }
