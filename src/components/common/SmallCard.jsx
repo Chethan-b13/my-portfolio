@@ -1,7 +1,7 @@
 import React from 'react'
 import "@/styles/cards.scss"
 
-const SmallCard = ({children,styles}) => {
+const SmallCard = ({children,styles,mobile=false}) => {
     const customStyle = {
         alignItems: styles?.alignItem || "center",
         width: styles?.width || "100%",
@@ -11,7 +11,7 @@ const SmallCard = ({children,styles}) => {
         justifyContent: styles?.justifyContent || "center",
     }
     return (
-        <div className='smallCardContainer' style={customStyle}>
+        <div className={`${mobile && "mobilepadding"} smallCardContainer`} style={customStyle}>
             {children}
         </div>
     )

@@ -10,6 +10,7 @@ const ProjectPage = () => {
             <SideSection />
             <div className='mainInfo_container'>
                 <div className="padding_section">
+                    <div className="blur_background"></div>
                     <h1 id='headline'>All Projects</h1>
                     <ProjectCards />
                 </div>

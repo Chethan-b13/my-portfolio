@@ -64,6 +64,11 @@
 
 
 @media screen and (max-width:768px) {
+
+    .flexBox .mobilepadding{
+        padding: 0.3rem 0.5rem !important;
+    }
+
     .smallCardContainer{
         padding: 1rem !important; 
         
@@ -73,6 +78,10 @@
 
         p{
             font-size: 0.7rem;
+        }
+
+        a{
+            font-size: 1rem;
         }
     }
 }

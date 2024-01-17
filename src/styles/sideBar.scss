@@ -114,12 +114,17 @@
 }
 
 .hidden{
-    display: none;
+    left: -20rem;
+}
+
+.expand{
+    left: 0;
 }
 
 .absoluteContainer{
     position: fixed !important;
     z-index: 100;
+    transition: all .3s ease-in-out;
 }
 
 

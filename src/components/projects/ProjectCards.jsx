@@ -25,7 +25,7 @@ const ProjectCards = () => {
                                 {
                                     project?.techUsed.map((tech,i)=>{
                                         return(
-                                            <SmallCard key={i} styles={{width:"fit-content",minHeight:"auto",padding:"0.3rem 0.5rem"}}>
+                                            <SmallCard key={i} styles={{width:"fit-content",minHeight:"auto",padding:"0.3rem 0.5rem"}} mobile={true}>
                                                 <p>{tech}</p>
                                             </SmallCard>
                                         )

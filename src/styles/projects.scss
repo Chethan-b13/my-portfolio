@@ -30,3 +30,25 @@
     }
 
 }
+
+
+@media screen and (max-width:768px)  {
+    .padding_section{
+        .projectInfo{
+            padding: 0 0.5rem;
+        }
+
+        .allProjectsImage{
+            height: 12rem;
+            object-fit: cover;
+        }
+
+        .carousel-root{
+            width: 100%;
+    
+            .carousel{
+                height: 12rem;
+            }
+        }
+    }
+}

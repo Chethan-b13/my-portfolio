@@ -7,7 +7,7 @@ import { FaLinkedin,FaGithub } from "react-icons/fa6";
 import { MdMail} from "react-icons/md";
 
 
-const environment = "dev"
+const environment = "prod"
 export const BASEURL = environment==="dev"?"/":"https://chethan-b13.github.io/my-portfolio/"
 
 

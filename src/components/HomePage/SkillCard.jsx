@@ -10,7 +10,7 @@ const SkillCard = () => {
             {
             skills.map((skill,indx)=>{
                 return (
-                <SmallCard key={indx} styles={{width:"fit-content",minHeight:"auto",padding:"0.3rem 0.5rem"}}>
+                <SmallCard key={indx} styles={{width:"fit-content",minHeight:"auto",padding:"0.3rem 0.5rem"}} mobile={true}>
                     <div className="flexBox flex_gap_half">
                     {skill?.icon}
                     <p>{skill?.name}</p>

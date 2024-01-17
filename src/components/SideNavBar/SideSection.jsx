@@ -26,7 +26,7 @@ const SideSection = () => {
       
     </div>
     }
-    <div className={`sideBarcontainer ${isMobile && "absoluteContainer"} ${!openMenu && isMobile && "hidden"}`}>
+    <div className={`sideBarcontainer ${isMobile && "absoluteContainer"} ${isMobile && !openMenu ? "hidden" : "expand"}`}>
       <MainNameCard />
       <SideBarMenu />
       <div className="footerLinks smallFlexBox">
