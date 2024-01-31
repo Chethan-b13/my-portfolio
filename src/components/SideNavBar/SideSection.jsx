@@ -30,7 +30,7 @@ const SideSection = () => {
       <MainNameCard />
       <SideBarMenu />
       <div className="footerLinks smallFlexBox">
-        <a href="https://drive.google.com/file/d/1oXC6wUkiwmhn9PFwnBD9t_b1V9VcX8Mt/view?usp=drive_link" target='_blank' download="https://drive.google.com/file/d/1oXC6wUkiwmhn9PFwnBD9t_b1V9VcX8Mt/view?usp=drive_link">
+        <a href="https://drive.google.com/file/d/1QMuZLca_Vlm_7IcQWQeXE5z_7RWlY_Jq/view?usp=sharing" target='_blank' download="https://drive.google.com/file/d/1QMuZLca_Vlm_7IcQWQeXE5z_7RWlY_Jq/view?usp=sharing">
           <button className='smallFlexBox resumeDownloadButton'><MdDownloading /> Resume  </button>
         </a>
         <a href="https://github.com/chethan-b13/" target='_blank' className='smallFlexBox'><FaGithub /></a>
