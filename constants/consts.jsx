@@ -139,6 +139,17 @@ export const featuredProjects = [
 
 export const allProjects = [
   {
+    projectName: "Ticket Easy",
+    techUsed : ["Django","ReactJs","SQLite"],
+    projectImages: ["./projects/loginSignup.png","./projects/ticketeasyHome.png","./projects/tikceteasytopEvents.png"],
+    deployedLink : "https://tick-it-easy-frontend.vercel.app/",
+    details : [
+      "Built a comprehensive ticketing application using Django-REST, React.js, PostgreSQL and JWT for session management",
+      "Applied Redux for effective state management in project development",
+      "Created a user-friendly interface for effortless event creation and ticket booking"
+    ]
+  },
+  {
     projectName: "DanceStudio Portfolio",
     techUsed : ["Django","ReactJs","SQLite"],
     projectImages: ["./projects/danceSignup.png","./projects/danceHomePage.png","./projects/danceHomeJoin.png","./projects/danceHome2.png","./projects/danceHome3.png","./projects/danceHome4.png","./projects/danceFooter.png","./projects/danceGallery.png","./projects/danceProfile1.png"],
@@ -161,16 +172,6 @@ export const allProjects = [
       // "Technical Infrastructure: Leveraged Docker Compose for streamlined container management, enhancing application portability and scalability.",
       // "Functionalities: Authentication service ensured secure user management, while note-taking service provided versatile CRUD operations for notes, enhancing data manipulation capabilities."
   ]
-  },
-  {
-    projectName: "Ticket Easy",
-    techUsed : ["Django","ReactJs","SQLite"],
-    projectImages: ["./projects/loginSignup.png","./projects/ticketeasyHome.png","./projects/tikceteasytopEvents.png"],
-    details : [
-      "Built a comprehensive ticketing application using Django-REST, React, SQLite and JWT for session management",
-      "Applied Redux for effective state management in project development",
-      "Created a user-friendly interface for effortless event creation and ticket booking"
-    ]
   },
   {
     projectName: "Potato leaf Diseases Prediction",

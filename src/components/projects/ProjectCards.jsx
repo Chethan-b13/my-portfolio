@@ -5,6 +5,7 @@ import "@/styles/projects.scss";
 import { allProjects } from '../../../constants/consts';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 
 const ProjectCards = () => {
   return (
@@ -32,7 +33,13 @@ const ProjectCards = () => {
                                     })
                                 }
                             </div>
-                            <h3>{project?.projectName}</h3>
+                            <div className="flexBox flex_gap_1 flexWrap">
+                                <h3>{project?.projectName}</h3>
+                                {
+                                    project?.deployedLink &&
+                                    <a href={project?.deployedLink} target='_blank'><FaExternalLinkSquareAlt /></a>
+                                }
+                            </div>
                             {
                                 project?.details.map((point,idx)=>{
                                     return (
