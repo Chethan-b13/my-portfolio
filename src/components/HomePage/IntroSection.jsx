@@ -23,7 +23,7 @@ const IntroSection = () => {
             <p>Personal Projects</p>
             </SmallCard>
             <SmallCard>
-            <h1>8<span style={{fontSize:"1rem"}}>Months</span></h1>
+            <h1>1<span style={{fontSize:"1rem"}}>Year</span></h1>
             <p>Industry Experience</p>
             </SmallCard>
             <SmallCard>
@@ -31,8 +31,8 @@ const IntroSection = () => {
             <p>Robust Skill Set</p>
             </SmallCard>
             <SmallCard>
-            <h1>1100+</h1>
-            <p>Contributions Last Year</p>
+            <h1>3<span style={{fontSize:"1rem"}}>Years</span></h1>
+            <p>Hands on Experience</p>
             </SmallCard>
             
         </div>
