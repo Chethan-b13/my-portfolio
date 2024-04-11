@@ -227,7 +227,7 @@ export const workExperience = [
   {
     companyName:"Vedasis Analytics Pvt Ltd.",
     companyLogo : "./vhubLogo.png",
-    duration:"May 2023 - Present",
+    duration:"Jun 2023 - Present",
     role:"FullStack Developer & Tech Lead",
     summary:[
       "Optimized Flask backend structure, boosting scalability and readability, Integrated Swagger documentation and boosted productivity by 70%",

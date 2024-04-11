@@ -19,19 +19,19 @@ const IntroSection = () => {
         <div className="gridCardFour">
             {/* In Progress.... */}
             <SmallCard>
-            <h1>15+</h1>
-            <p>Personal Projects</p>
+            <h1>1<span style={{fontSize:"1rem"}}>+ Year</span></h1>
+            <p>Industry Experience</p>
             </SmallCard>
             <SmallCard>
-            <h1>1<span style={{fontSize:"1rem"}}>Year</span></h1>
-            <p>Industry Experience</p>
+            <h1>15+</h1>
+            <p>Personal Projects</p>
             </SmallCard>
             <SmallCard>
             <h1>17+</h1>
             <p>Robust Skill Set</p>
             </SmallCard>
             <SmallCard>
-            <h1>3<span style={{fontSize:"1rem"}}>Years</span></h1>
+            <h1>3<span style={{fontSize:"1rem"}}>+ Years</span></h1>
             <p>Hands on Experience</p>
             </SmallCard>
             
