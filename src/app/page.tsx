@@ -22,7 +22,6 @@ const Home = () => {
       </div>
       {/* Engineering Tomorrow: One Line of Code at a Time. */}
       {/* Building Tomorrow: Tech Tales by [Your Name] */}
-      
 
     </div>
   )
