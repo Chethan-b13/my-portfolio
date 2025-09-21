@@ -22,9 +22,8 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { MdMail } from "react-icons/md";
 
-const environment = "dev";
-export const BASEURL =
-  environment === "dev" ? "/" : "https://chethan-b13.github.io/my-portfolio/";
+const environment = process.env.NEXT_PUBLIC_ENV || "dev";
+export const BASEURL = environment === "prod" ? "/my-portfolio/" : "/";
 
 export const skills = [
   {
@@ -300,11 +299,12 @@ export const workExperience = [
     duration: "Apr 2024 - Present",
     role: "Software Engineer 1",
     summary: [
-      "Developed an automated workflow that saved $2,000–$3,000 per day by recovering and re-registering failed webinar leads using Django REST APIs and Celery.",
-      "Redesigned the webhook integration for HubSpot and the product, eliminating synchronization issues and boosting success rates to 99%.",
-      "Developed 15+ UI components using Next.js and integrated Redux for state management.",
-      "Integrated Climb payment gateway for pay-later options, contributing to more than 35% of the company's payment transactions.",
-      "Saved $50 a month in HubSpot subscription cost by developing an automation pipeline to sync marketing email data to BigQuery using AWS Lambda and EventBridge.",
+      "Revamped the core webinar registration system (legacy code) using Django & React, enabling multi-webinar registrations and sales tracking, reducing lead miss rates by 20%+.",
+      "Developed automation workflows with Django REST, Celery, AWS Lambda, and EventBridge, saving $2K–$3K/day, cutting HubSpot costs, and achieving 99% synchronization accuracy.",
+      "Delivered full-stack features including 15+ reusable UI components in Next.js with Redux, secure authentication using AWS Cognito, and payment gateway integration powering 35%+ of company transactions.",
+      "Optimized performance by resolving 6–8 critical slow queries and delivering 50+ bug fixes on high-priority growth features, saving significant operational costs.",
+      "Led system design and delivery of projects such as referral automation (10× productivity), Discord–Freshdesk bot (SAM architecture, CI/CD, 3-week delivery), and Zoom attendance sync.",
+      "Consistently delivered 1.5× velocity by leveraging AI tools (Cursor, ChatGPT), operated at Senior Engineer capacity, and became the go-to owner for growth-critical projects.",
     ],
   },
   {
