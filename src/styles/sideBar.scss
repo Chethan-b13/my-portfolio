@@ -1,164 +1,159 @@
 @import "../styles/global.scss";
 
+.sideBarcontainer {
+  position: sticky;
+  top: 0;
+  background: $bg-color2;
+  max-width: 21em;
+  height: 100vh;
+  padding: 0 2.5em;
 
-.sideBarcontainer{
-    position: sticky;
-    top: 0;
-    background: $bg-color2;
-    max-width: 21em;
-    height: 100vh;
-    padding: 0 2.5em;
+  .sideBarHeader {
+    width: 100%;
+    padding: 1.5em;
+    position: relative;
 
-    .sideBarHeader{
+    .mainImage {
+      width: 140px;
+      height: 140px;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
         width: 100%;
-        padding: 1.5em;
-        position: relative;
+        transform: scale(1.2);
+      }
+    }
 
-        .mainImage{
-            width: 140px;
-            height: 140px;
-            border-radius: 10px;
-            overflow: hidden;
+    p {
+      color: $dark-gray;
+      width: 11rem;
+    }
+  }
 
-            img{
-                width: 100%;
-                transform: scale(1.2);
-            }
+  .sidenav_list {
+    .nav_items {
+      padding: 1.2em 1.5em;
+
+      a {
+        color: $text-color;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        font-size: clamp(0.95rem, 0.4vw + 0.9rem, 1.1rem);
+        color: $dark-gray;
+        transition: all 0.3s ease-in-out;
+
+        &.active {
+          color: $text-color;
         }
 
-        p{
+        svg {
+          color: $-text-color--grey-placeholder;
+        }
+
+        &:hover {
+          color: $text-color;
+
+          svg {
             color: $dark-gray;
-            width: 11rem;
+            animation: rotate3d 0.5s ease-in-out alternate-reverse;
+          }
         }
+      }
+    }
+  }
+
+  .footerLinks {
+    position: fixed;
+    bottom: 1em;
+    margin-left: 1.5em;
+
+    .resumeDownloadButton {
+      color: $-text-color--grey-placeholder;
+      font-size: clamp(0.9rem, 0.2vw + 0.85rem, 0.95rem);
+      padding: 0.475rem 0.725rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $dark-gray;
+
+        svg {
+          color: $dark-gray;
+        }
+      }
     }
 
-    .sidenav_list{
-        .nav_items{
-            padding: 1.5em 1.5em;
+    a {
+      font-size: clamp(0.95rem, 0.4vw + 0.9rem, 1.1rem);
 
+      svg {
+        color: $-text-color--grey-placeholder;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
 
-            a{
-                color: $text-color;
-                display: flex;
-                align-items: center;
-                gap: 0.5em;
-                font-size: 20px;
-                color: $dark-gray;
-                transition: all .3s ease-in-out;
-
-                &.active{
-                    color: $text-color;
-                }
-
-                svg{
-                    color: $-text-color--grey-placeholder;
-                }
-
-                &:hover{
-                    color: $text-color;
-
-                    svg{
-                        color: $dark-gray;
-                        animation: rotate3d .5s ease-in-out alternate-reverse;
-                    }
-                }
-            }
-
-            
+        &:hover {
+          color: $dark-gray;
+          scale: 1.1;
         }
+      }
+
+      &:last-child {
+        font-size: clamp(1.1rem, 0.6vw + 1rem, 1.4rem);
+      }
     }
-
-    .footerLinks{
-        position: fixed;
-        bottom: 1em;
-        margin-left: 1.5em;
-
-        .resumeDownloadButton{
-            color: $-text-color--grey-placeholder;
-            font-size: 15px;
-            padding: .475rem .725rem;
-            transition: all .3s ease-in-out;
-
-            &:hover{
-                color: $dark-gray;
-
-                svg{
-                    color: $dark-gray;
-                }
-            }
-        }
-
-        a{
-            font-size: 20px;
-
-            svg{
-                color:  $-text-color--grey-placeholder;
-                cursor: pointer;
-                transition: all .3s ease-in-out;
-
-                &:hover{
-                    color : $dark-gray;
-                    scale: 1.1;
-                }
-            }
-
-            
-
-            &:last-child{
-                font-size: 25px;
-            }
-        }
-        
-        
-    }
+  }
 }
 
-.hidden{
-    left: -20rem;
+.hidden {
+  left: -20rem;
 }
 
-.expand{
-    left: 0;
+.expand {
+  left: 0;
 }
 
-.absoluteContainer{
-    position: fixed !important;
-    z-index: 100;
-    transition: all .3s ease-in-out;
+.absoluteContainer {
+  position: fixed !important;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
-
 
 // #### Animations ##################
 
 @keyframes rotate3d {
-    0%{
-        transform: rotate3d(1, 1, 1, 0deg);
-    }
-    100%{
-        transform: rotate3d(1, 1, 1, 360deg);
-    }
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .sideBarcontainer {
+    padding: 0 1rem;
+    left: -20rem;
 
-@media screen and (max-width:768px) {
-    .sideBarcontainer{
-        padding: 0 1rem;
-
-
-        .sideBarHeader{
-            h1{
-                font-size: 1.5rem;
-            }
-        }
-
-        .sidenav_list{
-            .nav_items{
-                padding: 1rem 1.5rem;
-
-                a{
-                    font-size: 1rem;
-                }
-            }
-        }
+    // Show when explicitly expanded on mobile
+    &.expand {
+      left: 0;
     }
+
+    .sideBarHeader {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .sidenav_list {
+      .nav_items {
+        padding: 1rem 1.5rem;
+
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }

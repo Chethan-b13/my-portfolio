@@ -116,11 +116,11 @@ export const menuOptions = [
 ];
 
 export const ContactDetails = [
-  {
-    contactIcon: <FaPhoneAlt />,
-    link: "tel:+917022381576",
-    name: "+91 7022381576",
-  },
+  // {
+  //   contactIcon: <FaPhoneAlt />,
+  //   link: "tel:+917022381576",
+  //   name: "+91 7022381576",
+  // },
   {
     contactIcon: <MdMail />,
     link: "mailto:chethanb1321@gmail.com",
@@ -140,31 +140,51 @@ export const ContactDetails = [
 
 export const featuredProjects = [
   {
+    projectName: "Logoutloud",
+    techUsed: "React Native | Node.js | MongoDB",
+    projectImage: "./projects/logoutloud/1.png",
+  },
+  {
     projectName: "Ticket Easy",
     techUsed: "Django | ReactJs | SQLite",
     projectImage: "./projects/ticketeasyHome.png",
-  },
-  {
-    projectName: "DanceStudio Portfolio",
-    techUsed: "Django | ReactJs | SQLite",
-    projectImage: "./projects/danceSignup.png",
   },
 ];
 
 export const allProjects = [
   {
-    projectName: "Ticket Easy",
-    techUsed: ["Django", "ReactJs", "SQLite"],
-    projectImages: [
-      "./projects/loginSignup.png",
-      "./projects/ticketeasyHome.png",
-      "./projects/tikceteasytopEvents.png",
+    projectName: "Logoutloud",
+    techUsed: [
+      "React Native",
+      "Expo SDK 52",
+      "TypeScript",
+      "Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "GCP",
     ],
-    deployedLink: "https://tick-it-easy-frontend.vercel.app/",
+    projectImages: [
+      "./projects/logoutloud/1.png",
+      "./projects/logoutloud/2.png",
+      "./projects/logoutloud/3.png",
+      "./projects/logoutloud/4.png",
+      "./projects/logoutloud/5.png",
+      "./projects/logoutloud/6.png",
+      "./projects/logoutloud/7.png",
+      "./projects/logoutloud/8.png",
+    ],
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.logoutloud.app",
+    appStoreLink:
+      "https://apps.apple.com/in/app/logoutloud/id6746362059?platform=iphone",
     details: [
-      "Built a comprehensive ticketing application using Django-REST, React.js, PostgreSQL and JWT for session management",
-      "Applied Redux for effective state management in project development",
-      "Created a user-friendly interface for effortless event creation and ticket booking",
+      "A production-ready social experience platform for local hangouts and group journeys with real users.",
+      "Mobile app: iOS & Android (React Native, Expo 52) with multi-provider auth, Google Maps-based discovery, push notifications, QR check-in, payments, ratings.",
+      "Backend: Node.js/Express TypeScript API on GCP with MongoDB, Firebase, geospatial queries, role-based access (Users, Hosts, Captains).",
+      "Payments: Multi-gateway integration (Razorpay, PayU, Cashfree) with UPI/cards.",
+      "Security & Quality: JWT auth, validation, rate limiting; TypeScript, ESLint, Prettier, Jest.",
     ],
   },
   {
@@ -185,6 +205,21 @@ export const allProjects = [
       "Developed an engaging website for a dance class, using Django, ReactJS, SQLite and JWT for session management",
       "Streamlined the dance class's online presence, effectively showcasing their expertise, and facilitating the sale of online classes and workshops, enhancing their reach and impact",
       "Developed a user-friendly interface allowing easy signups and membership application",
+    ],
+  },
+  {
+    projectName: "Ticket Easy",
+    techUsed: ["Django", "ReactJs", "SQLite"],
+    projectImages: [
+      "./projects/loginSignup.png",
+      "./projects/ticketeasyHome.png",
+      "./projects/tikceteasytopEvents.png",
+    ],
+    deployedLink: "https://tick-it-easy-frontend.vercel.app/",
+    details: [
+      "Built a comprehensive ticketing application using Django-REST, React.js, PostgreSQL and JWT for session management",
+      "Applied Redux for effective state management in project development",
+      "Created a user-friendly interface for effortless event creation and ticket booking",
     ],
   },
   {

@@ -35,8 +35,8 @@ const SideSection = () => {
         </div>
       )}
       <div
-        className={`sideBarcontainer ${isMobile && "absoluteContainer"} ${
-          isMobile && !openMenu ? "hidden" : "expand"
+        className={`sideBarcontainer ${isMobile ? "absoluteContainer" : ""} ${
+          openMenu ? "expand" : ""
         }`}
       >
         <MainNameCard />

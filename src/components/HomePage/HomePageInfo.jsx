@@ -21,12 +21,12 @@ const HomePageInfo = () => {
             I&#39;m a{" "}
             <Typewriter
               words={[
-                "Full Stack Developer",
-                "Web Development Specialist",
-                "Mobile App Developer",
-                "Automation Enthusiast",
+                "Full-Stack Engineer",
+                "Mobile & Web Developer",
+                "Backend/API Specialist",
+                "Product Builder",
               ]}
-              loop={5}
+              loop={Infinity}
               cursor
               cursorStyle="_"
               typeSpeed={80}
@@ -35,13 +35,27 @@ const HomePageInfo = () => {
             />
           </h1>
           <div className="mainGridSection">
-            <IntroSection />
-            <SkillCard />
-            <FeaturedProjects />
-            <Experience />
-            <div className="certAndContact">
-              <Certificates />
-              <ContactCard />
+            <div className="grid-intro">
+              <IntroSection />
+            </div>
+            <div className="leftColumn">
+              <div className="grid-skills">
+                <SkillCard />
+              </div>
+              <div className="grid-featured">
+                <FeaturedProjects />
+              </div>
+              <div className="grid-certificates">
+                <Certificates />
+              </div>
+              <div className="grid-contact">
+                <ContactCard />
+              </div>
+            </div>
+            <div className="rightColumn">
+              <div className="grid-experience">
+                <Experience />
+              </div>
             </div>
           </div>
         </div>

@@ -1,250 +1,304 @@
 @import "../styles/global.scss";
 
+.mainInfo_container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  // justify-content: space-between;
+  align-items: center;
+  display: flex;
 
-.mainInfo_container{
+  .padding_section {
     width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    flex-direction: column;
-    // justify-content: space-between;
-    align-items: center;
-    display: flex;
-  
- 
+    padding: 5em 2.5em 2.5rem 2.5rem;
 
-    .padding_section{
-        width: 100%;
-        padding: 5em 2.5em 2.5rem 2.5rem;
-
-        #headline{
-            font-size: 3em;
-            font-weight: 400;
-        }
-
-        .mainGridSection{
-            width: 100%;
-            margin-top: 2em;
-            position: relative;
-            display: grid;
-            gap: 1rem 1rem;
-            grid-template-columns: 1fr 1fr;
-
-            .gridCardFour{
-                position: relative;
-                display: grid;
-                gap: 1rem 1rem;
-                align-items: center;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-            }
-
-            .certAndContact{
-                display: grid;
-                grid-template-rows: 1fr 2fr;
-                grid-gap: 1rem 1rem;
-                gap: 1rem 1rem;
-                height: fit-content;
-
-                .contactDetails{
-                    a,svg{
-                        font-size: 1rem !important;
-                        color: $dark-gray;
-                    }
-                }
-            }
-        }
-
-    }  
-    
-    .imageContainer{
-        
-        position: relative;
-        cursor: pointer;
-        overflow: hidden;
-        height: 33vh;
-        border-radius: 5px;
-
-        img{
-            width: 100%;
-            height: 33vh;
-            object-fit: cover;
-        }
-
-        .overlayBg{
-            background: rgba(0, 0, 0, 0.618);
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transform: translateY(-20rem);
-            transition: all .3s ease-in-out;
-
-            .projectDetails{
-                padding: 10px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-
-            }
-        }
-
-        &:hover .overlayBg{
-            transform: translateY(0);
-            animation: screenDown .3s;
-        }
+    #headline {
+      font-size: clamp(1.8rem, 3.2vw + 1rem, 3.25rem);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
     }
 
+    .mainGridSection {
+      width: 100%;
+      margin-top: 2em;
+      position: relative;
+      display: grid;
+      gap: 1rem 1rem;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: start;
+      align-content: start;
+      /* Avoid dense packing to prevent layout jumps */
+      grid-auto-rows: auto;
+      grid-template-areas:
+        "intro intro"
+        "left right";
 
+      /* wrappers define independent vertical stacks per column */
+      > * {
+        min-width: 0;
+        min-height: 0;
+      }
+
+      .grid-intro {
+        grid-area: intro;
+      }
+      .leftColumn {
+        grid-area: left;
+        display: grid;
+        gap: 1rem;
+        align-content: start;
+      }
+      .rightColumn {
+        grid-area: right;
+        display: grid;
+        gap: 1rem;
+        align-content: start;
+      }
+
+      /* IntroSection split into 50-50 columns */
+      .grid-intro {
+        .introSplit {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          align-items: stretch;
+        }
+        .introLeft,
+        .introRight {
+          min-width: 0;
+        }
+      }
+
+      .gridCardFour {
+        position: relative;
+        display: grid;
+        gap: 1rem 1rem;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      .certAndContact {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-gap: 1rem 1rem;
+        gap: 1rem 1rem;
+        height: fit-content;
+
+        .contactDetails {
+          a,
+          svg {
+            font-size: 1rem !important;
+            color: $dark-gray;
+          }
+        }
+      }
+    }
+  }
+
+  .imageContainer {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 33vh;
+    border-radius: 5px;
+    background: #000; /* support portrait images without cropping */
+
+    img {
+      width: 100%;
+      height: 33vh;
+      object-fit: contain; /* show full 9:16 images */
+      background: #000;
+    }
+
+    .overlayBg {
+      background: rgba(0, 0, 0, 0.618);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-20rem);
+      transition: all 0.3s ease-in-out;
+
+      .projectDetails {
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &:hover .overlayBg {
+      transform: translateY(0);
+      animation: screenDown 0.3s;
+    }
+  }
 }
-
 
 // ############ Certificates ############################
-.certificateName{
+.certificateName {
+  h4 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-    h4{
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-    p,a{
-        font-size: 0.9rem !important;
-    }
+  p,
+  a {
+    font-size: 0.9rem !important;
+  }
 }
-
-
-
 
 // ################### experience ##############################
 
-.companyInfo{
-    display: flex;
-    gap: 1rem;
+.companyInfo {
+  display: flex;
+  gap: 1rem;
 
-    .companyLogo{
-        height: 5rem;
-        width: 5rem;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
+  .companyLogo {
+    height: 5rem;
+    width: 5rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
-        img{
-            width: 100%;
-        }
+    img {
+      width: 100%;
     }
+  }
 
-    h4,h3{
-        font-size: 1rem;
-        font-weight: 500;
-    }
+  h4,
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-    a,p{
-        width: fit-content;
-        font-size: 0.9rem !important;
-    }
+  a,
+  p {
+    width: fit-content;
+    font-size: 0.9rem !important;
+  }
 
-    h3{
-        color: $primary-color;
-    }
+  h3 {
+    color: $primary-color;
+  }
 
-    hr{
-        border: 0.0625rem solid rgba(255, 255, 255, 0.1);
-        margin-bottom: 1rem;
-    }
+  hr {
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+  }
 }
-
 
 // ############# Experience Section #################
 
-.experienceSection{
-    height: 27.8rem;
-    overflow: hidden;
-    
+.experienceSection {
+  height: 27.8rem;
+  overflow: hidden;
 }
-
 
 // #################################################
 
-.humburger{
-    position: fixed;
-    top: 1rem;
-    left: 1.5rem;
-    z-index: 999;
-    transition: all 0.4s ease-in-out;
-    
-    svg{
-        font-size: 1.5rem;
-        color: $dark-gray;
-    }
+.humburger {
+  position: fixed;
+  top: 1rem;
+  left: 1.5rem;
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
+
+  svg {
+    font-size: 1.5rem;
+    color: $dark-gray;
+  }
 }
 
 // ############## Animations ##########################
 @keyframes screenDown {
-    0%{
-        transform: translateY(-20rem);
-    }
-    100%{
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(-20rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
-
 
 // ############### Mobile Screen #############################
 
-@media screen and (max-width:768px) {
-    .mainInfo_container{
+@media screen and (max-width: 768px) {
+  .mainInfo_container {
+    .padding_section {
+      padding: 4em 1.5em 1.5rem 1.5rem;
 
-        .padding_section{
-            padding: 4em 1.5em 1.5rem 1.5rem;
+      #headline {
+        font-size: 1.5rem;
+      }
 
-            #headline{
-                font-size: 1.5rem;
+      .mainGridSection {
+        // grid-template-columns:1fr;
+        display: flex;
+        flex-direction: column;
+
+        .gridCardFour {
+          gap: 0.5rem;
+        }
+
+        /* IntroSection responsive stack */
+        .grid-intro {
+          .introSplit {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+          }
+        }
+
+        /* Right gutter for all leftColumn sections when stacked */
+        > .leftColumn > * {
+          padding-right: 1rem;
+        }
+
+        .certAndContact {
+          display: flex;
+          flex-direction: column;
+
+          .contactDetails {
+            a,
+            svg {
+              font-size: 0.7rem !important;
             }
-
-            .mainGridSection{
-                // grid-template-columns:1fr;
-                display: flex;
-                flex-direction: column;
-
-                .gridCardFour{
-                    gap: 0.5rem;
-                }
-
-                .certAndContact{
-                    display: flex;
-                    flex-direction: column;
-
-                    .contactDetails{
-                        a,svg{
-                            font-size: 0.7rem !important;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
+    }
+  }
+
+  .certificateName {
+    h4 {
+      font-size: 0.9rem;
+      font-weight: 500;
     }
 
-    .certificateName{
+    p,
+    a {
+      font-size: 0.7rem !important;
+    }
+  }
 
-        h4{
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-    
-        p,a{
-            font-size: 0.7rem !important;
-        }
+  .companyInfo {
+    h3,
+    h4 {
+      font-size: 0.9rem;
     }
 
-    .companyInfo{
-
-        h3,h4{
-            font-size: 0.9rem;
-        }
-
-        p,a{
-            font-size: 0.7rem !important;
-        }
+    p,
+    a {
+      font-size: 0.7rem !important;
     }
+  }
 
+  // .grid-skills,
+  // .grid-featured,
+  // .grid-certificates,
+  // .grid-contact {
+  //   padding-right: 1.5rem;
+  // }
 }
