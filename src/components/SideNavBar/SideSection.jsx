@@ -43,9 +43,9 @@ const SideSection = () => {
         <SideBarMenu />
         <div className="footerLinks smallFlexBox">
           <a
-            href="https://drive.google.com/file/d/1vAlUIN4FlGcZJTexkTd3YdgtBkjY3XNl/view?usp=sharing"
+            href="https://linkly.link/2FzAc"
             target="_blank"
-            download="https://drive.google.com/file/d/1vAlUIN4FlGcZJTexkTd3YdgtBkjY3XNl/view?usp=sharing"
+            download="https://drive.google.com/file/d/15iWBWT7cNgoeEdNhuHmKq7o1q2ZLBPsN/view?usp=sharing"
           >
             <button className="smallFlexBox resumeDownloadButton">
               <MdDownloading /> Resume{" "}
