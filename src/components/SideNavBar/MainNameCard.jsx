@@ -9,7 +9,10 @@ const MainNameCard = () => {
       <h2 style={{ marginTop: "1rem" }}>Chethan B</h2>
       {/* <p>Team Lead | Data Scientist | Full Stack Developer</p> */}
       {/* <p>Engineering Tomorrow: One Line of Code at a Time.</p> */}
-      <p>A Versatile Tech Wizard</p>
+      {/* <p>A Versatile Tech Wizard</p> */}
+      <p style={{ fontSize: "12px" }}>
+        Full-Stack Engineer | Distributed Systems
+      </p>
     </div>
   );
 };

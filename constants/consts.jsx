@@ -8,13 +8,12 @@ import {
   FaDatabase,
   FaDocker,
   FaGlobe,
-  FaHtml5,
   FaPython,
   FaReact,
-  FaWordpress,
+  FaAws,
+  FaJs,
   FaLaptopCode,
   FaPhoneAlt,
-  FaAws,
 } from "react-icons/fa";
 import { GoGraph, GoGitBranch } from "react-icons/go";
 import { MdCoffee, MdComputer, MdDataObject } from "react-icons/md";
@@ -31,52 +30,52 @@ export const skills = [
     icon: <FaPython />,
   },
   {
-    name: "AWS",
-    icon: <FaAws />,
+    name: "JavaScript | TypeScript",
+    icon: <FaJs />,
   },
   {
-    name: "DSA",
-    icon: <MdDataObject />,
-  },
-  {
-    name: "Django | Flask",
-    icon: <BiLogoDjango />,
-  },
-  {
-    name: "ReactJs | NextJs | Redux",
-    icon: <FaReact />,
-  },
-  {
-    name: "WebSockets  ",
-    icon: <FaGlobe />,
-  },
-  {
-    name: "HTML | CSS | JavaScript | TypeScript",
-    icon: <FaHtml5 />,
-  },
-  {
-    name: "React Native",
-    icon: <FaReact />,
-  },
-  {
-    name: "PostgreSQL | BigQuery | NoSQL",
+    name: "SQL",
     icon: <FaDatabase />,
   },
   {
-    name: "WordPress",
-    icon: <FaWordpress />,
+    name: "Django | Flask | Node.js",
+    icon: <BiLogoDjango />,
   },
   {
-    name: "Docker | Docker-Compose",
+    name: "REST APIs | Celery | Microservices",
+    icon: <MdComputer />,
+  },
+  {
+    name: "AWS (Lambda, ECS, EC2, SQS, EventBridge, CloudWatch, S3)",
+    icon: <FaAws />,
+  },
+  {
+    name: "Docker | Terraform",
     icon: <FaDocker />,
+  },
+  {
+    name: "PostgreSQL | MySQL | DynamoDB | Redis",
+    icon: <FaDatabase />,
+  },
+  {
+    name: "React | Next.js | Redux",
+    icon: <FaReact />,
+  },
+  {
+    name: "Distributed Systems",
+    icon: <FaGlobe />,
+  },
+  {
+    name: "Event-Driven Architecture",
+    icon: <MdDataObject />,
   },
   {
     name: "System Design",
     icon: <MdComputer />,
   },
   {
-    name: "Machine Learning | Deep Learning | NLP",
-    icon: <GoGraph />,
+    name: "CI/CD",
+    icon: <MdComputer />,
   },
 ];
 
@@ -296,29 +295,29 @@ export const workExperience = [
   {
     companyName: "Interview Kickstart",
     companyLogo: "./ik_logo.png",
-    duration: "Apr 2024 - Present",
-    role: "Software Engineer 1",
+    duration: "May 2024 - Present",
+    role: "Software Engineer II",
     summary: [
-      "Revamped the core webinar registration system (legacy code) using Django & React, enabling multi-webinar registrations and sales tracking, reducing lead miss rates by 20%+.",
-      "Developed automation workflows with Django REST, Celery, AWS Lambda, and EventBridge, saving $2K–$3K/day, cutting HubSpot costs, and achieving 99% synchronization accuracy.",
-      "Delivered full-stack features including 15+ reusable UI components in Next.js with Redux, secure authentication using AWS Cognito, and payment gateway integration powering 35%+ of company transactions.",
-      "Optimized performance by resolving 6–8 critical slow queries and delivering 50+ bug fixes on high-priority growth features, saving significant operational costs.",
-      "Led system design and delivery of projects such as referral automation (10× productivity), Discord–Freshdesk bot (SAM architecture, CI/CD, 3-week delivery), and Zoom attendance sync.",
-      "Consistently delivered 1.5× velocity by leveraging AI tools (Cursor, ChatGPT), operated at Senior Engineer capacity, and became the go-to owner for growth-critical projects.",
+      "Led migration from EC2 and Elastic Beanstalk to Dockerized ECS Fargate infrastructure, improving reliability, autoscaling, deployment efficiency, and operational scalability across production services.",
+      "Drove a company-wide PII encryption initiative across 170+ AWS Lambda services and 50+ production workloads, delivering compliance upgrades with zero downtime.",
+      "Architected a distributed event-driven platform using Salesforce Platform Events, AWS Lambda, SQS, Celery, and n8n, processing 20K+ events daily with fault-tolerant delivery, retries, and monitoring.",
+      "Redesigned HubSpot–Salesforce synchronization architecture and migrated 700K+ records while modernizing legacy integrations and improving CRM data reliability.",
+      "Built automated lead recovery systems using Django, Celery, EventBridge, Lambda, and SQS, saving $2K–$3K daily while maintaining 99%+ CRM data accuracy.",
+      "Built a distributed support automation platform using AWS Lambda, DynamoDB, SQS, and DLQs, increasing student query resolution from 30–40% to 90%+.",
     ],
   },
   {
     companyName: "Vedasis Analytics Pvt Ltd.",
     companyLogo: "./vhubLogo.png",
-    duration: "Jun 2023 - Mar 2024",
-    role: "FullStack Developer & Team Lead",
+    duration: "Jun 2023 - Apr 2024",
+    role: "Founding Engineer",
     summary: [
-      "Enhanced backend performance by 60% through Redis integration, multi-threading, and optimized query efficiency.",
-      "Mentored the team and refactored the Next.js codebase by eliminating redundant code, creating reusable components and custom hooks.",
-      "Conducted code reviews for stable, bug-free deployments which reduced post-deployment issues by 50% and improved overall product quality.",
-      "Engineered scraping tools for Instagram and YouTube, enabling collection of over 8000 data points per day.",
-      "Revamped WordPress landing page, slashing reload time from 8 to 2 seconds and boosting SEO score by 89%.",
-      "Interacted directly with 10+ clients to gather requirements, planning feature implementations aligned with stakeholder needs.",
+      "Built the company's influencer marketing SaaS platform from 0 to 1, owning architecture, backend services, frontend applications, database design, and production deployment.",
+      "Led engineering execution through sprint planning, feature prioritization, code reviews, and development workflows, improving delivery predictability and reducing production defects.",
+      "Designed and implemented RBAC, subscription management, and credit-based billing systems that enabled scalable customer onboarding and monetization.",
+      "Established cloud infrastructure on GCP Cloud Run and implemented CI/CD pipelines using GitHub Actions, improving deployment velocity and engineering productivity.",
+      "Improved backend performance by 60% through Redis caching, concurrent processing, and database query optimization.",
+      "Built large-scale Instagram and YouTube data pipelines processing 300K+ records monthly for influencer discovery and analytics.",
     ],
   },
 ];

@@ -21,10 +21,11 @@ const HomePageInfo = () => {
             I&#39;m a{" "}
             <Typewriter
               words={[
-                "Full-Stack Engineer",
-                "Mobile & Web Developer",
-                "Backend/API Specialist",
-                "Product Builder",
+                "FullStack Engineer",
+                "Backend Engineer",
+                "Distributed Systems Engineer",
+                "AWS Cloud Engineer",
+                "Platform Engineer",
               ]}
               loop={Infinity}
               cursor

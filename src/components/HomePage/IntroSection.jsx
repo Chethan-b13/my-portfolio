@@ -9,7 +9,11 @@ const IntroSection = () => {
     // Proficient in crafting full stack web applications using Python and ReactJs/Nextjs,
     // I specialize in data collection, preprocessing, and creating innovative machine learning, deep learning, and NLP models.
     // `
-    `I'm a Full‑Stack Engineer who ships production‑grade mobile and web products end‑to‑end. I build React Native apps, Next.js frontends, and Node.js/TypeScript backends—integrating payments, maps, and real‑time workflows. I focus on reliability, developer experience, and measurable outcomes: faster delivery, lower costs, and happier users.`;
+    `
+    I'm a Full-Stack Software Engineer with 3+ years of experience building scalable products, distributed systems, 
+    and cloud-native applications. From React and Next.js frontends to event-driven backend platforms on AWS, 
+    I enjoy solving complex engineering problems and delivering systems with measurable business impact.
+    `;
   return (
     <>
       <div className="blur_background"></div>
@@ -19,21 +23,21 @@ const IntroSection = () => {
             {/* In Progress.... */}
             <SmallCard>
               <h1>
-                2<span style={{ fontSize: "1rem" }}>+ Years</span>
+                3+<span style={{ fontSize: "1rem" }}> Years</span>
               </h1>
-              <p>Industry Experience</p>
+              <p>Building Software Products</p>
             </SmallCard>
             <SmallCard>
-              <h1>15+</h1>
-              <p>Personal Projects</p>
+              <h1>0 → 1</h1>
+              <p>Products Built from Scratch</p>
             </SmallCard>
             <SmallCard>
-              <h1>20+</h1>
-              <p>Robust Skill Set</p>
+              <h1>170+</h1>
+              <p>Services Managed</p>
             </SmallCard>
             <SmallCard>
               <h1>
-                6<span style={{ fontSize: "1rem" }}>+ Years</span>
+                7+<span style={{ fontSize: "1rem" }}> Years</span>
               </h1>
               <p>Hands on Experience</p>
             </SmallCard>
