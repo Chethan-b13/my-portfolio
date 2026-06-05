@@ -304,6 +304,7 @@ export const workExperience = [
       "Redesigned HubSpot–Salesforce synchronization architecture and migrated 700K+ records while modernizing legacy integrations and improving CRM data reliability.",
       "Built automated lead recovery systems using Django, Celery, EventBridge, Lambda, and SQS, saving $2K–$3K daily while maintaining 99%+ CRM data accuracy.",
       "Built a distributed support automation platform using AWS Lambda, DynamoDB, SQS, and DLQs, increasing student query resolution from 30–40% to 90%+.",
+      "Engineered full-stack product workflows using Django and Next.js, building reusable UI systems, secure authentication flows, and business-critical features powering internal growth operations.",
     ],
   },
   {
@@ -313,6 +314,7 @@ export const workExperience = [
     role: "Founding Engineer",
     summary: [
       "Built the company's influencer marketing SaaS platform from 0 to 1, owning architecture, backend services, frontend applications, database design, and production deployment.",
+      "Developed scalable frontend systems with reusable Next.js components, custom hooks, role-based workflows, and responsive dashboards for analytics and campaign management.",
       "Led engineering execution through sprint planning, feature prioritization, code reviews, and development workflows, improving delivery predictability and reducing production defects.",
       "Designed and implemented RBAC, subscription management, and credit-based billing systems that enabled scalable customer onboarding and monetization.",
       "Established cloud infrastructure on GCP Cloud Run and implemented CI/CD pipelines using GitHub Actions, improving deployment velocity and engineering productivity.",
